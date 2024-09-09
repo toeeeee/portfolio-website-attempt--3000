@@ -41,3 +41,25 @@ body {
     width: 592px;
     margin: 4px;
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+    padding: 0;
+    width: 585px;
+}
+
+.nav-item {
+    border-top: none;
+    border: 2px;
+    height: 24px;
+    width: 130px;
+    margin: 0 2 1%;
+}
+
+
+.nav-img {
+    max-width: 85%;
+}
