@@ -1,0 +1,43 @@
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+section {
+    min-height: 50vh;
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+body {
+    background-color: #aedbe8;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+#content {
+    background-color: #ffff;
+    outline: 2px solid;
+    outline-color: black;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    min-height: 90vh;
+    width: 600px;
+}
+
+#banner {
+    width: 592px;
+    margin: 4px;
+}
