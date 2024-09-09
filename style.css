@@ -29,7 +29,7 @@ body {
 
 #content {
     background-color: #ffff;
-    outline: 2px solid;
+    outline: 1px solid;
     outline-color: black;
     margin-top: 10px;
     margin-bottom: 50px;
@@ -45,21 +45,29 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    place-content: center;
 
     margin: 0 auto;
     padding: 0;
+    gap: 2px;
     width: 585px;
 }
 
 .nav-item {
+    border: 1px solid;
     border-top: none;
-    border: 2px;
     height: 24px;
-    width: 130px;
-    margin: 0 2 1%;
+    width: auto;
+
 }
 
 
 .nav-img {
-    max-width: 85%;
+    max-width: 100%;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.nav-img:hover {
+
 }
