@@ -9,44 +9,57 @@
 
     <title>Anthony Nguyen</title>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
-    <div id="content">
-        <a href="index.html">
-            <img src="images/banner.jpg" id="banner">
-        </a>
-        <nav>
-            <a class="nav-item" href="projects.html">
-                <img class="nav-img" src="images/nav-projects.jpg">
+    <div id="wrapper">
+        
+
+        <div id="container">
+        <video autoplay muted loop id="duckvid">
+            <source src="images/output1.webm" type="video/webm">
+        </video>
+        <div id="container">
+    
+
+        <div id="main-content">
+            <a href="index.html">
+                <img src="images/banner.jpg" id="banner">
             </a>
-            <a class="nav-item" href="art.html">
-                <img class="nav-img" src="images/nav-art.jpg">
-            </a>
-            <a class="nav-item" href="blog.html">
-                <img class="nav-img" src="images/nav-blog.jpg">
-            </a>
-            <a class="nav-item" href="other.html">
-                <img class="nav-img" src="images/nav-other.jpg">
-            </a>
-        </nav>
-        <div id="news">
-            <img src="images/news.png" height="24" alt="News"> 
-            <p class="date">September 9th, 2024</p>
-            <p>Just created the website.</p>
+            <nav>
+                <a class="nav-item" href="projects.html">
+                    <img class="nav-img" src="images/nav-projects.jpg">
+                </a>
+                <a class="nav-item" href="art.html">
+                    <img class="nav-img" src="images/nav-art.jpg">
+                </a>
+                <a class="nav-item" href="blog.html">
+                    <img class="nav-img" src="images/nav-blog.jpg">
+                </a>
+                <a class="nav-item" href="other.html">
+                    <img class="nav-img" src="images/nav-other.jpg">
+                </a>
+            </nav>
+            <div id="news">
+                <img src="images/about/news.png" height="24" class="hidden" alt="News"> 
+                <p class="hidden" id="date">September 13th, 2024</p>
+                <p class="hidden">Finished this page!</p>
+            </div>
+            <div class="clearfix" id="about">
+                <img src="/images/about/about-anthony.jpg" id="about-anthony">
+                <img src="/images/about/about-me.png" height="24" class="hidden" id="about-me">
+                <p class="hidden">My name is Anthony Nguyen. I grew up in Sacramento, CA, where I spent most of my childhood reading and drawing comics. I now reside in Orange County, where I attend university to study computer science and mathematics and specialize in full stack development and computer graphics.</p>
+                <p class="hidden">This website is mostly a personal one but I do want to show off projects that could seem interesting to employers.</p>
+                <p class="hidden">I like and am proficient in: Python, C++, JS, HTML/CSS</p>
+                <p class="hidden">I also really like: rock music, public transit, board games, these microwavable spaghetti and meatballs I had today, and rock climbing.</p>
+            </div>
+            <div class="footer">
+                <img src="images/feeter.png" height="22px">
+            </div>
         </div>
-        <div class="clearfix" id="about">
-            <img src="/images/about-anthony.jpg" id="about-anthony">
-            <img src="/images/about-me.png" height="24" id="about-me">
-            <p>My name is Anthony Nguyen. I grew up in Sacramento, CA, where I spent most of my childhood reading and drawing comics. I now reside in Orange County, where I attend university to study computer science and mathematics and specialize in full stack development and computer graphics.</p>
-            <p>This website is mostly a personal one but I do want to show off projects that could seem interesting to employers.</p>
-            <p>I like and am proficient in: Python, C++, JS, HTML/CSS</p>
-            <p>I also really like: rock music, public transit, board games, these microwavable spaghetti and meatballs I had today, and rock climbing.</p>
-        </div>
-        <div class="footer">
-            <img src="images/feeter.png" height="22px">
-        </div>
+
+        
     </div>
 </body>
 </html>
