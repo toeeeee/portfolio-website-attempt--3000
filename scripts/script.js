@@ -14,7 +14,13 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Video automatic loop handler
+var duck = document.getElementById('duckvid');
+duck.addEventListener('videoEnd', function() 
+    {
+        this.currentTime = 0;
+        this.play();    
+    },
+    false
+);
+duck.play();
 
-const vid = document.querySelector("video");
-
-document.getElementById('duckvid').addEventListener('videoEnd', play);
