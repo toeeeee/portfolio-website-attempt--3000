@@ -42,6 +42,91 @@
                 </a>
             </nav>
             
+            <div class="box" id="projectss">
+                <div class="hidden">
+                    <p class="bold"> 2024 - 2025 </p>
+                    <p class="projtitle"> search engine :  april - june 2024</p>
+                    <div class="popuptext" id='a' onclick="showOrHide('a')">
+                        <div class="projbox">
+                                <a href="https://github.com/toeeeee/searchengine121"> school specific search engine </a>
+                                <br></br>
+                                <b>most recent branch is 'streamlit-main' </b>
+                                <p> 
+                                I and 3 other developers made a search engine!
+                                </p>
+
+                                <p>
+                                Cool, right? To summarize, the engine worked 
+                                by reverse indexing websites already scraped from the 
+                                university's CS department. Tokens were gathered 
+                                from webpages and ranked to determine relevance 
+                                when returning results. 
+                                </p>
+
+                                <p>
+                                I worked on the ranking portion and decided on 
+                                using cosine similarity to compare tokens/key words. 
+                                Websites were made multi-dimensonal as vectors that 
+                                had angles based on tokens on the site.
+
+                                Search queries also were vectors. The website vectors 
+                                closest to the query vectors are returned.     
+                                </p>
+                                
+                                <p>
+                                Some problems we ran into included:
+                                <ul>
+                                    <li><p>
+                                    not knowing Git/Github. This was huge as I had 
+                                    to learn how to set up pull requests and developer 
+                                    branches as our commit history got really messy 
+                                    without it. It also helped prevent frustration 
+                                    due to overriding the commits of others. 
+                                    </p></li>
+                                    <li><p>
+                                    edge case/similar searches like "ICS33" 
+                                    and "ICS 33" or "software engineering" 
+                                    and "master of software engineering". 
+                                    Breaking tokens up in multiple ways helped 
+                                    make more accurate vectors for cosine similarity.
+                                    Some keywords were also hardcoded to boost 
+                                    higher rankings for certain websites. That could 
+                                    be used for SEO xD!
+                                    </p></li>
+                                    <li><p>
+                                    nonsensical searches like "ASKJHDAIYS12342$@#!". 
+                                    These delayed search time so we added an upper 
+                                    limit for how many comparisons we did.
+                                    </p></li>
+                                </ul>
+                                <p> You can try it <a>here</a> or look at the examples below.</p>
+                                <img class="projimg" src="images/projects/ics33search.png">
+                                <img class="projimg" src="images/projects/swesearch.png">
+                                <img class="projimg" src="images/projects/mswesearch.png">
+                                </p>
+                        </div>
+                    </div>
+
+
+                    <a onclick="showOrHide('a', true)">
+                        <img class="piece" src="images/projects/swesearch.png">
+                    </a>
+
+                    
+                </div>
+            </div>
+        <div class="footer">
+            <img src="images/feeter.png" height="22px">
+        </div>
+            
+        <script>
+            function showOrHide(id, showBool) { 
+                let el = document.getElementById(id);
+                if (showBool) { el.style.display = "grid"; return; }
+                el.style.display = "none";
+            }
+        </script>
+
         </div>
 
         
