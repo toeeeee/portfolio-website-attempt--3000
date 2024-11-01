@@ -11,6 +11,7 @@
 
 
 body {
+    background-color: #abffbd;
     background-color: linear-gradient(#aedbe8, #75b6c9);
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -39,12 +40,19 @@ body {
     left: 0;
     height: 100%;
     height: 100vh;
+    width: 100%;
     width: 100vw;
     object-fit: fill;
 }
 
 #duckvid src {
     object-fit: fill;
+}
+
+@media only screen and (max-width: 800px) {
+    #duckvid {
+        display: none;
+    }
 }
 
 p {
@@ -301,6 +309,7 @@ nav {
 .projbox {
     background: linear-gradient(#d7d7d7, white);
     width: 850px;
+    width: 80%;
     height: 500px;
     margin: 5px 7px 14px 7px;
     border: 3px solid;
@@ -317,6 +326,6 @@ nav {
 
 .projimg {
     object-fit: contain;
-    width: 800px;
+    width: 100%;
     height: auto;
 }
