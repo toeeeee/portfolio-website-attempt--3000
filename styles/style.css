@@ -11,7 +11,7 @@
 
 
 body {
-    background-color: #abffbd;
+    background-color: #defbff;
     background-color: linear-gradient(#aedbe8, #75b6c9);
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -49,7 +49,7 @@ body {
     object-fit: fill;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 640px) {
     #duckvid {
         display: none;
     }
@@ -184,9 +184,15 @@ nav {
 #contact {
     background: linear-gradient(#d7d7d7, white);
     width: 585px;
+    height: 325px;
     margin: 5px 7px 12px 7px;
     border: 1px solid;
     padding-bottom: 7px;
+}
+
+#contact a {
+    text-decoration: none;
+    pointer-events: none;
 }
 
 #contact img {
@@ -195,6 +201,31 @@ nav {
     margin-bottom: 0px;
     aspect-ratio: auto;
     width: auto;
+    pointer-events: all;
+}
+
+#contact #git {
+    left: 530px;
+    width: 8%;
+    height: auto;
+}
+
+#contact #lin {
+    left: 435px;
+    width: 6.5%;
+    height: auto;
+}
+
+#contact #mail {
+    left: 345px;
+    width: 6.5%;
+    height: auto;
+}
+
+#contact p {
+    position: relative;
+    top: 182px;
+    text-indent: 9em;
 }
 
 /* Contact */
