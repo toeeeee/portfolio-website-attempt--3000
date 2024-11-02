@@ -228,6 +228,10 @@ nav {
     text-indent: 9em;
 }
 
+#dinning {
+    pointer-events: all;
+}
+
 /* Contact */
 
 /* Gallery */
