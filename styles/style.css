@@ -224,8 +224,12 @@ nav {
 
 #contact p {
     position: relative;
-    top: 182px;
-    text-indent: 9em;
+    float: left;
+    text-wrap: pretty;
+    width: 200px;
+    left: 5px;
+    top: 0px;
+    margin: 0;
 }
 
 #contact #dinning {
