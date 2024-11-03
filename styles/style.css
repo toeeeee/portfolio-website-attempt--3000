@@ -228,7 +228,7 @@ nav {
     text-indent: 9em;
 }
 
-#dinning {
+#contact #dinning {
     pointer-events: all;
 }
 
@@ -321,7 +321,7 @@ nav {
 
 /* Blog */
 
-/* Gallery */
+/* Projects */
 
 .projtitle {
     text-indent: 1em;
